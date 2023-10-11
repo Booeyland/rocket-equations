@@ -1,4 +1,3 @@
-# Author = Andrew Talpins
 import math
 #Constant Variables
 #----------------------------------------------------------------
@@ -34,9 +33,9 @@ def do_the_math(engine_type):
         case _:
             print("Please select a rocket engine that this program supports")
             quit()
-    T = I/t
+    T = I/t # Motor Thrust in Newtons
     mB = mR + mE - mP/2 # boost mass in kg
-    mC = mR + mE - mP
+    mC = mR + mE - mP # coast mass in kg
     q = math.sqrt((T-(mB)*g)/(aD*cd*A/2)) # variable q to make equations easier on the eyes
     k = (aD*cd*A/2) # air drag coefficient in kg/m
     p = 2*k*q/mB # variable p to make equations easier on the eyes   
